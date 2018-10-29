@@ -4,9 +4,5 @@ pool:
 steps:
 - script: dotnet build -c Release
   displayName: 'dotnet build'
-- task: DotNetCoreCLI@2
-  inputs:
-    command: publish
-    publishWebProjects: True
-    arguments: '-c Release -o $(Build.ArtifactStagingDirectory)'
-    zipAfterPublish: True
+- script: dotnet publish -c Release -o publish
+  displayName: 'dotnet publish'
