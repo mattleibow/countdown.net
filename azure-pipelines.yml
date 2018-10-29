@@ -4,6 +4,7 @@ pool:
 steps:
 - script: dotnet build -c Release
   displayName: 'dotnet build'
-- script: dotnet publish -c Release -o publish
+- script: dotnet publish -c Release -o $(Build.ArtifactStagingDirectory)
   displayName: 'dotnet publish'
 - task: PublishBuildArtifacts@1
+  
