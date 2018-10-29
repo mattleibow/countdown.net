@@ -6,3 +6,4 @@ steps:
   displayName: 'dotnet build'
 - script: dotnet publish -c Release -o publish
   displayName: 'dotnet publish'
+- task: PublishBuildArtifacts@1
