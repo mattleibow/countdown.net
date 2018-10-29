@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Blazor.Builder;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Countdown
+namespace Countdown.Client
 {
     public class Startup
     {

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Blazor.Hosting;
 
-namespace Countdown
+namespace Countdown.Client
 {
     public class Program
     {
